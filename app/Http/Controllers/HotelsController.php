@@ -89,6 +89,7 @@ class HotelsController extends Controller
             //if no image upload then use the default noimage.jpg image
             $fileNameToStore = 'noimage.jpg';
         }
+        
         //save the new hotel
         $hotel = new Hotel();
         $hotel->name = $request->input('name');
